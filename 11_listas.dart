@@ -4,12 +4,14 @@ void main() {
 
   // Lista de cadenas
   List<String> nombres = ['Ana', 'Luis', 'Carlos'];
-
+  print(nombres);
   // Lista vacía con tipo definido
   List<double> precios = [];
+  print(precios);
 
   // Lista de tipo dinámico
   List<dynamic> miLista = [1, "Hola", true];
+  print(miLista);
 
   List<String> frutas = ['Uva', 'Manzana', 'Platano', 'Cereza', 'Pera'];
 
