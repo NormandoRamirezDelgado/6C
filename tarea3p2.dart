@@ -1,30 +1,29 @@
 import 'dart:io';
 
 class Figura {
-  double baseMayor;
-  double baseMenor;
-  double altura;
+  double baseMayor = 0;
+  double baseMenor = 0;
+  double altura = 0;
   double area = 0;
-
-  Figura(this.baseMayor, this.baseMenor, this.altura);
 
   void calcularArea(){
     area = (baseMayor + baseMenor) * altura / 2;
   }
 
-  void imprimirArea(){
-    print('El área del trapecio es: $area');
+  String imprimirArea(){
+    return 'El área del trapecio es: $area';
   }
 }
 
 void main() {
+  Figura trapecio = Figura();
   print('Base Mayor del Trapecio:');
-  double baseMayor = double.parse(stdin.readLineSync()!);
+  trapecio.baseMayor = double.parse(stdin.readLineSync()!);
   print('Base Menor del Trapecio:');
-  double baseMenor = double.parse(stdin.readLineSync()!);
+  trapecio.baseMenor = double.parse(stdin.readLineSync()!);
   print('Altura del Trapecio:');
-  double altura = double.parse(stdin.readLineSync()!);
-  Figura trapecio = Figura(baseMayor, baseMenor, altura);
+  trapecio.altura = double.parse(stdin.readLineSync()!);
+  
   trapecio.calcularArea();
-  trapecio.imprimirArea();
+  print(trapecio.imprimirArea());
 }
