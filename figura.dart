@@ -2,8 +2,6 @@ class CuentaBancaria {
   String _titular;
   double _saldo;
 
-  CuentaBancaria(this._titular, this._saldo);
-
   // Getter para obtener el saldo
   double get getSaldo => _saldo;
 
@@ -16,5 +14,5 @@ class CuentaBancaria {
     } 
   }
 
-  void _metodo(){}
+  CuentaBancaria(this._titular, this._saldo);
 }
