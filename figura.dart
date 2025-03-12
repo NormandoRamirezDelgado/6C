@@ -15,15 +15,6 @@ class CuentaBancaria {
       _saldo = _saldo + cantidad;
     } 
   }
-}
 
-void main() {
-  var cuenta = CuentaBancaria("Carlos", 1000);
-  print(cuenta.getSaldo); // ✅ Obtiene el saldo
-
-  cuenta.setDeposito = 1500; // ✅ Modifica el saldo correctamente
-  print(cuenta.getSaldo);
-
-  cuenta.setDeposito = -500; // ❌ Mensaje de error: No se puede asignar saldo negativo
-  print(cuenta.getSaldo);
+  void _metodo(){}
 }
