@@ -12,7 +12,7 @@ class CuentaBancaria {
       _saldo = _saldo + cantidad;
     } else {
       _saldo = _saldo + cantidad;
-    } 
+    }
   }
 }
 
@@ -23,6 +23,7 @@ void main() {
   cuenta.setDeposito = 1500; // ✅ Modifica el saldo correctamente
   print(cuenta.getSaldo);
 
-  cuenta.setDeposito = -500; // ❌ Mensaje de error: No se puede asignar saldo negativo
+  cuenta.setDeposito =
+      -500; // ❌ Mensaje de error: No se puede asignar saldo negativo
   print(cuenta.getSaldo);
 }
