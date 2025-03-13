@@ -1,8 +1,7 @@
 class CuentaBancaria {
-  String _titular;
   double _saldo;
 
-  CuentaBancaria(this._titular, this._saldo);
+  CuentaBancaria(this._saldo);
 
   // Getter para obtener el saldo
   double get getSaldo => _saldo;
@@ -18,7 +17,7 @@ class CuentaBancaria {
 }
 
 void main() {
-  var cuenta = CuentaBancaria("Carlos", 1000);
+  var cuenta = CuentaBancaria(1000);
   print(cuenta.getSaldo); // ✅ Obtiene el saldo
 
   cuenta.setDeposito = 1500; // ✅ Modifica el saldo correctamente
