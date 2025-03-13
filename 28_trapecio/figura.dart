@@ -7,11 +7,8 @@ class CuentaBancaria {
 
   // Setter para modificar el saldo con validación
   set setDeposito(double cantidad) {
-    if (cantidad >= 0) {
-      _saldo = _saldo + cantidad;
-    } else {
-      _saldo = _saldo + cantidad;
-    } 
+    _saldo = _saldo + cantidad;
+
   }
 
   CuentaBancaria(this._titular, this._saldo);
