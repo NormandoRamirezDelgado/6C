@@ -1,7 +1,7 @@
 import 'figura.dart';
 
 void main() {
-  var cuenta = CuentaBancaria("Carlos", 100);
+  var cuenta = CuentaBancaria(100);
   print(cuenta.getSaldo); // ✅ Obtiene el saldo
 
   cuenta.setDeposito = 1500; // ✅ Modifica el saldo correctamente
